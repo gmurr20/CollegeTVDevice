@@ -1,0 +1,257 @@
+body {
+	font-family: Open Sans Regular;
+}
+.weatherCard {
+	border-radius: 25px;
+	background: linear-gradient(#003366, black); /* Standard syntax */
+	position: absolute;
+	left:40px;
+	top:10px;
+	z-index:-1;
+	height:305px;
+	width:245px;
+}
+
+.clockCard {
+	border-radius: 25px;
+	background: linear-gradient(#003366, black);
+	position: absolute;
+	right:55px;
+	top:10px;
+	z-index:-1;
+	height:117px;
+	width:295px;
+}
+
+.newsCard {
+	border-radius: 25px;
+	background: linear-gradient(black, #003366);
+	position: absolute;
+	left:40px;
+	top:340px;
+	z-index:-1;
+	height:350px;
+	width:320px;
+}
+
+.scheduleCard {
+	border-radius: 25px;
+	background: linear-gradient(black, #003366);
+	position: absolute;
+	left:450px;
+	top:340px;
+	z-index:-1;
+	height:350px;
+	width:382px;
+}
+
+.homeworkCard {
+	border-radius: 25px;
+	background: linear-gradient(black, #003366);
+	position: absolute;
+	right:55px;
+	top:340px;
+	z-index:-1;
+	height:350px;
+	width:305px;
+}
+.background {
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.fullscreen {
+	position: fixed;
+ 	top: 50%; left: 50%;
+ 	z-index: 1;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	transform: translate(-50%, -50%);
+}
+
+.space {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#city {
+	color: white;
+	font-size: 22px;
+	width: 100%;
+}
+#mainIcon {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 110px;
+	height: 95px;
+}
+
+#mainCondition {
+	width: 100%;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	margin-right: 10px;
+	vertical-align: bottom;
+	margin-top: 80px;
+}
+#temp {
+	display: inline-block;
+	width: 130px;
+	height: 95px;
+	vertical-align: top;
+}
+
+#mainTemp {
+	width: 100%;
+	font-size: 40px;
+	padding-left: 25px;
+	color: white;
+}
+
+#highLowTemp {
+	display: inline-block;
+	width: 100%;
+	font-size: 15px;
+	padding-left: 28px;
+	vertical-align: top;
+	color: white;
+}
+#sun {
+	width: 100%;
+	margin-top: 12px;
+}
+#sunIcon {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-left: 25px;
+	filter: brightness(0) invert(1);
+}
+#sunText {
+	display: inline-block;
+	font-size: 12px;
+	color: white;
+	vertical-align: bottom;
+}
+#date {
+	padding-left: 10px;
+	color: white;
+	font-size: 20px;
+	width: 100%;
+}
+#clock {
+	margin: auto;
+	padding-left:5px;
+	color: white;
+	font-size: 55px;
+	width: 100%;
+}
+
+#dayForecast {
+	display: inline-block;
+	color: white;
+	font-size: 14px;
+	width:25px;
+}
+
+#forecastIcon {
+	display: inline-block;
+	width: 108px;
+	text-align: center;
+	margin-bottom: -20px;
+}
+
+#highLowForecast {
+	display: inline-block;
+	color: white;
+	font-size: 14px;
+}
+
+#newsImg {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5px;
+}
+#author {
+	font-size: 10px;
+	font-style: italic;
+}
+#newsText {
+	display: inline-block;
+	color: white;
+	width: 270px;
+}
+.newsRow {
+	width: 100%;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+#title {
+	width: 100%;
+	font-size: 16px;
+}
+
+#description {
+	width: 100%;
+	font-size: 12px;
+	color: white;
+}
+#homeworkRow {
+	width: 100%;
+	font-size: 18px;
+	color: white;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: left;
+}
+
+#examRow {
+	width: 100%;
+	font-size: 20px;
+	font-weight: bolder;
+	color: #fd3d3d;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: left;
+}
+
+#scheduleClassRow {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	margin-top: 10px;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 10px;
+	background-color: green;
+	color: white;
+	font-size: 20px;
+}
+
+#scheduleRow {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	margin-top: 10px;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 10px;
+	background-color: blue;
+	color: white;
+	font-size: 20px;
+}
+
+#scheduleTime {
+	width: 100%;
+	font-size: 12px;
+	margin-bottom: -5px;
+}

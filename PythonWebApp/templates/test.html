@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang=eng>
+<head>
+	<title>Good Morning Greg</title>
+	<link rel="stylesheet" type="text/css" href="../static/myStyles.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body style="background-image: url('https://source.unsplash.com/random'); background-repeat: no-repeat; background-size:cover;" onload="setInterval('updateClock()',200)">
+	<div class="weatherCard"></div>
+	<div class="clockCard"></div>
+	<div class="newsCard"></div>
+	<div class="scheduleCard"></div>
+	<div class="homeworkCard"></div>
+	<div class="container">
+		<div class="row space"></div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4">
+				<div id="city">
+					Burr Ridge
+				</div>
+				<div style="background-image: url('http://openweathermap.org/img/w/01n.png');" id="mainIcon">
+					<div id="mainCondition">
+						Clear Skies
+					</div>
+				</div>
+				<div id="temp">
+					<div id="mainTemp">
+						50°
+					</div>
+					<div id="highLowTemp">60&nbsp40</div>
+					<img style="margin-top: 5px; margin-bottom: -1px;" src="../static/sunrise.png" id="sunIcon"/>
+					<div id="sunText">4:32am</div>
+					<img src="http://www.iconninja.com/files/887/244/56/sunset-outline-symbol-icon.svg" id="sunIcon"/>
+					<div id="sunText">4:32pm</div>
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-5"></div>
+			<div class="col-lg-3 col-md-3">
+				<div id="date"></div>
+				<div id="clock"></div>
+			</div>
+		</div>
+
+		<div class="row space"></div>
+		<div class="row space"></div>
+
+		<div class="row">
+			<div class="col-lg-4 col-md-4">
+				<div id="dayForecast">
+					Mon
+				</div>
+				<div id="forecastIcon">
+					<img src="http://openweathermap.org/img/w/01n.png" style="width: 40px; height: 40px"/>
+				</div>
+				<div id="highLowForecast">
+					60&nbsp&nbsp40
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4">
+				<div id="dayForecast">
+					Mon
+				</div>
+				<div id="forecastIcon">
+					<img src="http://openweathermap.org/img/w/01n.png" style="width: 40px; height: 40px"/>
+				</div>
+				<div id="highLowForecast">
+					60&nbsp&nbsp40
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4">
+				<div id="dayForecast">
+					Mon
+				</div>
+				<div id="forecastIcon">
+					<img src="http://openweathermap.org/img/w/01n.png" style="width: 40px; height: 40px"/>
+				</div>
+				<div id="highLowForecast">
+					60&nbsp&nbsp40
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4">
+				<div id="dayForecast">
+					Mon
+				</div>
+				<div id="forecastIcon">
+					<img src="http://openweathermap.org/img/w/01n.png" style="width: 40px; height: 40px"/>
+				</div>
+				<div id="highLowForecast">
+					60&nbsp&nbsp40
+				</div>
+			</div>
+		</div>
+		<div class="row space"></div>
+		<div class="row space"></div>
+		<div class="row space"></div>
+		<div class="row space"></div>
+		<div class="row">
+			<div class="col-lg-3 col-md-3">
+				<div id="city">Morning News</div>
+				<div class="newsRow">
+					<div id="newsImg">
+						<img src="http://sites.psu.edu/matthewjentis5228/wp-content/uploads/sites/15940/2015/02/newspaper.jpg" style="width: 50px; height:50px;"/>
+					</div>
+					<div id="newsText">
+						<div id="title">title title title title title title</div>
+						<div id= "author">author here</div>
+						<div id="description">d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d</div>
+					</div>
+				</div>
+				<div class="newsRow">
+					<div id="newsImg">
+						<img src="http://sites.psu.edu/matthewjentis5228/wp-content/uploads/sites/15940/2015/02/newspaper.jpg" style="width: 50px; height:50px;"/>
+					</div>
+					<div id="newsText">
+						<div id="title">title title title title title title</div>
+						<div id="description">d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d</div>
+					</div>
+				</div>
+				<div class="newsRow">
+					<div id="newsImg">
+						<img src="http://sites.psu.edu/matthewjentis5228/wp-content/uploads/sites/15940/2015/02/newspaper.jpg" style="width: 50px; height:50px;"/>
+					</div>
+					<div id="newsText">
+						<div id="title">title title title title title title</div>
+						<div id="description">d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d</div>
+					</div>
+				</div>
+				<div class="newsRow">
+					<div id="newsImg">
+						<img src="http://sites.psu.edu/matthewjentis5228/wp-content/uploads/sites/15940/2015/02/newspaper.jpg" style="width: 50px; height:50px;"/>
+					</div>
+					<div id="newsText">
+						<div id="title">title title title title title title</div>
+						<div id="description">d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-lg-1 col-md-1"></div>
+			<div class="col-lg-4 col-md-4">
+				<div id="city">Morning News</div>
+				<div id="scheduleRow">
+					<div id="scheduleTime">10:00-10:50AM, Altgeld Hall 213</div> 
+					Math 412-C13
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	// This function gets the current time and injects it into the DOM
+	function updateClock() {
+	    // Gets the current time
+	    var now = new Date();
+	    var date = now.toDateString();
+	    if (date.includes("Sun")) {
+	    	date = "Sunday" + date.substr(3);
+	    }
+	    else if( date.includes("Tue")) {
+	    	date = "Tuesday" + date.substr(3);
+	    }
+	    else if(date.includes("Wed")) {
+	    	date = "Wednesday" + date.substr(3);
+	    }
+	    else if(date.includes("Thu")) {
+	    	date = "Thursday" + date.substr(3);
+	    }
+	    else if(date.includes("Fri")) {
+	    	date = "Friday" + date.substr(3);
+	    }
+	    else {
+	    	date = "Saturday" + date.substr(3);
+	    }
+
+	    // Get the hours, minutes and seconds from the current time
+	    var hours = now.getHours();
+	    var minutes = now.getMinutes();
+			
+	    //am or pm
+		var period;
+		if (hours < 12) {
+			period = "AM";
+		}
+		else {
+			period = "PM";
+		}
+
+	    // Format hours, minutes
+	    if (hours == 0) {
+	    	hours = "12";
+	    }
+	    else if (hours < 10) {
+	        hours = "0" + hours;
+	    }
+	    else if (hours > 12) {
+	    	hours = hours - 12;
+	    	if (hours < 10)
+	    		hours = "0" + hours;
+	    }
+	    if (minutes < 10) {
+	        minutes = "0" + minutes;
+	    }
+
+	    // Gets the element we want to inject the clock into
+	    var elem = document.getElementById('clock');
+
+	    // Sets the elements inner HTML value to our clock data
+	    elem.innerHTML = hours + ':' + minutes +" "+period;
+
+	    var dt = document.getElementById('date');
+	    dt.innerHTML = date;
+	}
+</script>
+</html>
