@@ -20,4 +20,5 @@ def greeting(weather,count):
 	text+=w
 
 	text+="You have "+str(count)+" events scheduled for today.\n\n\n"
+	text+="Have a great day Gregory!"
 	return text
