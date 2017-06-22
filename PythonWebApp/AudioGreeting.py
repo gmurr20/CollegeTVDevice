@@ -1,4 +1,4 @@
-from gtts import gTTS
+#from gtts import gTTS
 import time
 import WeatherData
 def greeting(weather,count):
@@ -19,6 +19,6 @@ def greeting(weather,count):
 	w = " It is currently "+weather.condition+" outside with a high of "+str(weather.tempMax)+" and a low of "+str(weather.tempMin)+" degrees. "
 	text+=w
 
-	text+="You have "+str(count)+" events scheduled for today.\n\n\n"
+	text+="You have "+str(count)+" events scheduled for today."
 	text+="Have a great day Gregory!"
 	return text
