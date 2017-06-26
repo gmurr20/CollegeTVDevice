@@ -3,7 +3,8 @@ body {
 }
 .weatherCard {
 	border-radius: 25px;
-	background: linear-gradient(#003366, black); /* Standard syntax */
+	border: 1px white solid;
+	background: black; /* Standard syntax */
 	position: absolute;
 	left:40px;
 	top:10px;
@@ -14,7 +15,8 @@ body {
 
 .clockCard {
 	border-radius: 25px;
-	background: linear-gradient(#003366, black);
+	border: 1px white solid;
+	background: black;
 	position: absolute;
 	right:55px;
 	top:10px;
@@ -25,34 +27,37 @@ body {
 
 .newsCard {
 	border-radius: 25px;
-	background: linear-gradient(black, #003366);
+	border: 1px white solid;
+	background: black;
 	position: absolute;
 	left:40px;
-	top:340px;
+	top:400px;
 	z-index:-1;
-	height:350px;
+	height:390px;
 	width:320px;
 }
 
 .scheduleCard {
 	border-radius: 25px;
-	background: linear-gradient(black, #003366);
+	border: 1px white solid;
+	background: black;
 	position: absolute;
 	left:450px;
-	top:340px;
+	top:400px;
 	z-index:-1;
-	height:350px;
+	height:390px;
 	width:382px;
 }
 
 .homeworkCard {
 	border-radius: 25px;
-	background: linear-gradient(black, #003366);
+	border: 1px white solid;
+	background: black;
 	position: absolute;
 	right:55px;
-	top:340px;
+	top:400px;
 	z-index:-1;
-	height:350px;
+	height:390px;
 	width:305px;
 }
 .background {
@@ -197,7 +202,7 @@ body {
 
 #title {
 	width: 100%;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 #description {

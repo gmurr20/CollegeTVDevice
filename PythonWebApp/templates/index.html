@@ -18,7 +18,7 @@ $def with (weatherList, newsList, scheduleList, homeworkList, audioGreeting)
 			<div id="highLowTemp">
 				$weatherList[0].tempMax&nbsp&nbsp$weatherList[0].tempMin
 			</div>
-			<img style="margin-top: 5px; margin-bottom: -1px;" src="../static/sunrise.png" id="sunIcon"/>
+			<img style="margin-top: 5px; margin-bottom: -1px;" src="/static/sunrise.png" id="sunIcon"/>
 			<div id="sunText">$weatherList[0].sunrise</div>
 			<img src="http://www.iconninja.com/files/887/244/56/sunset-outline-symbol-icon.svg" id="sunIcon"/>
 			<div id="sunText">$weatherList[0].sunset</div>
@@ -46,6 +46,12 @@ $for i in range(1, len(weatherList)):
 		</div>
 	</div>
 
+<div class="row space"></div>
+<div class="row space"></div>
+<div class="row space"></div>
+<div class="row space"></div>
+<div class="row space"></div>
+<div class="row space"></div>
 <div class="row space"></div>
 <div class="row space"></div>
 <div class="row space"></div>
@@ -104,5 +110,5 @@ $for i in range(1, len(weatherList)):
 
 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 <script>
-setTimeout(responsiveVoice.speak(`$audioGreeting`, 'UK English Female'), 15000);
+setTimeout(responsiveVoice.speak('$audioGreeting', 'UK English Female'), 15000);
 </script>

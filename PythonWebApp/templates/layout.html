@@ -26,19 +26,19 @@ $def with (content)
 	    // Gets the current time
 	    var now = new Date();
 	    var date = now.toDateString();
-	    if (date.includes("Sun")) {
-	    	date = "Sunday" + date.substr(3);
+	    if (date.indexOf('Sun') != -1) {
+	    	date = 'Sunday' + date.substr(3);
 	    }
-	    else if( date.includes("Tue")) {
-	    	date = "Tuesday" + date.substr(3);
+	    else if( date.indexOf('Tue') != -1) {
+	    	date = 'Tuesday' + date.substr(3);
 	    }
-	    else if(date.includes("Wed")) {
+	    else if(date.indexOf("Wed") != -1) {
 	    	date = "Wednesday" + date.substr(3);
 	    }
-	    else if(date.includes("Thu")) {
+	    else if(date.indexOf("Thu") != -1) {
 	    	date = "Thursday" + date.substr(3);
 	    }
-	    else if(date.includes("Fri")) {
+	    else if(date.indexOf("Fri") != -1) {
 	    	date = "Friday" + date.substr(3);
 	    }
 	    else {
