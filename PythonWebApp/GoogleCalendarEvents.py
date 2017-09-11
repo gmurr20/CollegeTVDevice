@@ -208,3 +208,35 @@ def getHomework():
             scheduleList.append(sched)
 
     return scheduleList
+
+def getWakeupTime():
+	credentials = get_credentials()
+	http = credentials.authorize(httplib2.Http())
+	service = discovery.build('calendar', 'v3', http=http)
+
+	#get the events for the next week
+	now = datetime.datetime.utcnow().isoformat() + 'Z' # 'Z' indicates UTC time
+	later = (datetime.datetime.utcnow() + timedelta(hours=24) ).isoformat() + 'Z'
+	eventsResult = service.events().list()
+	calendarId='primary', timeMin=now, timeMax=later, maxResults=8, singleEvents=True,
+        orderBy='startTime').execute()
+	events = eventsResult.get('items', [])
+	if not events:
+        	print('No events for today')
+	else:
+		for event in events:
+
+            	#get the start and end date if it exist
+            		try:
+                		start = event['start']['dateTime']
+                		start = datetime.datetime.strptime(start, "%Y-%m-%dT%H:%M:%S-05:00").strftime('%I:%M')
+                		hour = start.split(':')[0]
+                		minute = int(start.split(':')[1])-45
+                		if minute < 0:
+                    			minute = 60+minute
+                    			hour = hour - 1
+                		return (hour, minute)
+            		except:
+                		continue
+
+	return (6, 45)
